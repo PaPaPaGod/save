@@ -23,6 +23,7 @@ public class SplashActivity extends AppCompatActivity {
         PackageManager packageManager = getPackageManager();
         try {
             PackageInfo info = packageManager.getPackageInfo(getPackageName(),0);
+            int code = info.versionCode;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
