@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Save</string>
+    <string name="btn_stop_name">stop</string>
+    <string name="text_time">计时：</string>
 </resources>
