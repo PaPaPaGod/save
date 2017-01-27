@@ -10,19 +10,121 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.price.save.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_clock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <include layout="@layout/t9" />
 
-    <Button
-        android:text="@string/btn_stop_name"
-        android:id="@+id/btn_stop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_clock"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp" />
+    <!--<Button-->
+        <!--android:text="通信卫士"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/btn_phone_against_steal"-->
+        <!--android:layout_toRightOf="@+id/btn_phone_against_steal"-->
+        <!--android:layout_toEndOf="@+id/btn_phone_against_steal"-->
+        <!--android:layout_marginLeft="43dp"-->
+        <!--android:layout_marginStart="43dp"-->
+        <!--android:id="@+id/btn_communication" />-->
+
+    <!--<Button-->
+        <!--android:text="软件管理"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/btn_communication"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:id="@+id/btn_software" />-->
+
+    <!--<Button-->
+        <!--android:text="手机防盗"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="49dp"-->
+        <!--android:id="@+id/btn_phone_against_steal"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<Button-->
+        <!--android:text="手机杀毒"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/btn_flow"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:id="@+id/btn_antivirus" />-->
+
+    <!--<Button-->
+        <!--android:text="进程管理"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btn_process"-->
+        <!--android:layout_below="@+id/btn_phone_against_steal"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="83dp" />-->
+
+    <!--<Button-->
+        <!--android:text="流量管理"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btn_flow"-->
+        <!--android:layout_alignBaseline="@+id/btn_process"-->
+        <!--android:layout_alignBottom="@+id/btn_process"-->
+        <!--android:layout_alignLeft="@+id/btn_communication"-->
+        <!--android:layout_alignStart="@+id/btn_communication" />-->
+
+    <!--<Button-->
+        <!--android:text="缓存管理"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btn_process"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="86dp"-->
+        <!--android:id="@+id/btn_cache" />-->
+
+    <!--<Button-->
+        <!--android:text="高级工具"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/btn_cache"-->
+        <!--android:layout_alignLeft="@+id/btn_flow"-->
+        <!--android:layout_alignStart="@+id/btn_flow"-->
+        <!--android:id="@+id/btn_advanced_tool" />-->
+
+    <!--<Button-->
+        <!--android:text="设置中心"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/btn_advanced_tool"-->
+        <!--android:layout_alignLeft="@+id/btn_antivirus"-->
+        <!--android:layout_alignStart="@+id/btn_antivirus"-->
+        <!--android:id="@+id/btn_setting" />-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btn_cache"-->
+        <!--android:layout_marginTop="65dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true">-->
+
+        <!--<com.price.save.view.MarqueeTextView-->
+            <!--android:singleLine="true"-->
+            <!--android:text="hellohellohellohellohellohellohellohellohellohellohellohellohellohello"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:marqueeRepeatLimit="marquee_forever"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent">-->
+
+        <!--</com.price.save.view.MarqueeTextView>-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="hellohellohellohellohellohellohellohellohellohellohellohellohellohello"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:ellipsize="marquee"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:marqueeRepeatLimit="marquee_forever"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:focusable="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:focusableInTouchMode="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
 </RelativeLayout>

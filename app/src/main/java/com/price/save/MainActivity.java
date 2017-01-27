@@ -11,64 +11,58 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView clock;
-    Button stop;
-    boolean run = true;
-    private int i;
-
-    private Handler handler = new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what){
-                case 100:
-                    clock.setText(R.string.text_time+""+msg.obj);
-                    break;
-                case 101:
-                    run = false;
-                    break;
-            }
-        }
-    };
+    private Button btn_phone_antisteal;
+    private Button btn_communication;
+    private Button btn_software;
+    private Button btn_process;
+    private Button btn_flow;
+    private Button btn_antivirus;
+    private Button btn_cache;
+    private Button btn_advanced;
+    private Button btn_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        clock = (TextView) findViewById(R.id.tv_clock);
-        stop = (Button) findViewById(R.id.btn_stop);
-        stop.setOnClickListener(this);
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(run){
-                    i++;
-                    Message msg = Message.obtain();
-                    msg.what = 100;
-                    msg.obj = i;
-                    handler.sendMessage(msg);
-                    try {
-                        Thread.currentThread().sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }).start();
+//        initView();
     }
 
-
-//    @Override
-//    public void onBackPressed() {
-//        super.onBackPressed();
-//        moveTaskToBack(false);
+//    private void initView() {
+//        btn_phone_antisteal = (Button) findViewById(R.id.btn_phone_against_steal);
+//        btn_communication = (Button) findViewById(R.id.btn_communication);
+//        btn_software = (Button) findViewById(R.id.btn_software);
+//        btn_process = (Button) findViewById(R.id.btn_process);
+//        btn_flow = (Button) findViewById(R.id.btn_flow);
+//        btn_antivirus = (Button) findViewById(R.id.btn_antivirus);
+//        btn_cache = (Button) findViewById(R.id.btn_cache);
+//        btn_advanced = (Button) findViewById(R.id.btn_advanced_tool);
+//        btn_setting = (Button) findViewById(R.id.btn_setting);
 //    }
 
     @Override
     public void onClick(View view) {
-        Message msg = Message.obtain();
-        msg.what = 101;
-        handler.sendMessage(msg);
+        int id = view.getId();
+        switch (id){
+//            case R.id.btn_phone_against_steal:
+//                break;
+//            case R.id.btn_communication:
+//                break;
+//            case R.id.btn_software:
+//                break;
+//            case R.id.btn_process:
+//                break;
+//            case R.id.btn_flow:
+//                break;
+//            case R.id.btn_antivirus:
+//                break;
+//            case R.id.btn_cache:
+//                break;
+//            case R.id.btn_advanced_tool:
+//                break;
+//            case R.id.btn_setting:
+//                break;
+        }
     }
 
     @Override
