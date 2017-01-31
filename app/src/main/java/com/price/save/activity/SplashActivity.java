@@ -13,6 +13,9 @@ import android.widget.RelativeLayout;
 
 import com.price.save.R;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 /**
  * Created by price on 2016/12/8.
  */
@@ -37,6 +40,12 @@ public class SplashActivity extends AppCompatActivity {
 
     private void enterHome() {
         startActivity(new Intent(this,HomeActivity.class));
+        try {
+            MessageDigest.getInstance("md5");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        finish();
     }
 
     @Override

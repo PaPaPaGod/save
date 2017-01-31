@@ -65,6 +65,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position){
             case 0:
+                startActivity(new Intent(this,AntiStealActivity.class));
                 break;
             case 8:
                 startActivity(new Intent(this,SettingActivity.class));
